@@ -76,7 +76,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.search{
+.search-nav{
     background: rgb(236, 231, 231);
     border-radius: 38px;
     padding: 2px;
@@ -84,12 +84,17 @@ nav ul li a:hover {
     height: 45px;
 }
 
+.logos{
+  display: flex;
+  gap: 15px;
+}
+
 #lup{
     margin-left: 10px;
     margin-top: 7px;
 }
 
-#busqueda{
+.finder{
     background: rgb(236, 231, 231);
     border: 0;
     padding-top: 1px;
@@ -112,17 +117,17 @@ main{
   padding-left: 10px;
   padding-right: 10px;
 }
-.contenedor-img-uno{
+.card-image-uno{
   margin-top: 10px;
   width: 260px;
   margin-left: 100px;
 }
 
-.contenedor-img-uno > div {
+.card-image-uno > div {
   margin-bottom: 26px;
 }
 
-.contenedor-img{
+.card-image{
   width: 260px;
   padding-bottom: 10px;
   padding-bottom: 15px;
@@ -130,7 +135,7 @@ main{
   display: inline-block;
 }
 
-.contenedor-img > .creditos {
+.card-image > .creditos {
   margin-bottom: 18px;
 }
 
@@ -191,4 +196,48 @@ main{
 
 .card-image:hover .btn {
   opacity: 1.5;
+}
+
+@media only screen and (max-width: 1000px) {
+  .search-nav{
+    background: rgb(236, 231, 231);
+    border-radius: 38px;
+    padding: 2px;
+    width: 500px;
+    height: 45px; 
+    display: flex;
+  }
+  
+  .finder{
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .search-nav{
+    background: rgb(236, 231, 231);
+    border-radius: 38px;
+    padding: 2px;
+    width: 200px;
+    height: 45px; 
+    display: flex;
+  }
+  
+  .finder{
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .search-nav{
+    background: rgb(236, 231, 231);
+    border-radius: 38px;
+    padding: 2px;
+    width: 100px;
+    height: 45px; 
+  }
+  
+  .finder{
+    width: 10px;
+  }
 }
