@@ -1,13 +1,16 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
 }
   /* Estilo para el encabezado */
 .navegador{
     margin: 7px;
+    margin-bottom: 0px;
     background-color: #fff;
     display: flex;
+    flex-flow: row;
     align-items: center;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -30,6 +33,11 @@
     margin-right: 5px;
   }
   
+#logo{
+  cursor: pointer;
+  width: 50px;
+  transition: 0.3s;
+}
 .items-inicio {
     text-decoration: none;
     border-radius: 35px;
@@ -58,7 +66,7 @@ nav ul li a:hover {
     background: rgb(236, 231, 231);
     border-radius: 38px;
     padding: 2px;
-    width: 500px;
+    width: 1300px;
     height: 45px;
 }
 
@@ -70,7 +78,103 @@ nav ul li a:hover {
 #busqueda{
     background: rgb(236, 231, 231);
     border: 0;
+    padding-top: 1px;
+    margin-top: 1px;
     text-decoration: none;
-    width: 430px;
+    width: 790px;
     height: 29px;
+}
+
+main{
+  display: flex;
+  height: 100vh;
+}
+
+/*Inicia el contenido*/
+.section{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contenedor-img-uno{
+  margin-top: 10px;
+  width: 260px;
+  margin-left: 100px;
+}
+
+.contenedor-img-uno > div {
+  margin-bottom: 26px;
+}
+
+.contenedor-img{
+  width: 260px;
+  padding-bottom: 10px;
+  padding-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.contenedor-img > .creditos {
+  margin-bottom: 18px;
+}
+
+.galery1{
+
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.description{
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+.creditos{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.creditos-img{
+  margin-top: 2px;
+  padding-right: 8px;
+  width: 35px;
+}
+
+.creditos-texto{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Transición para el div*/
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container:hover{
+  opacity: 0.5;
+}
+
+.btn {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background-color: #e60023;
+  top: 9%;
+  color: aliceblue;
+  border-radius: 50px;
+  right: -20%;
+  transform: translate(-50%, -50%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .btn {
+  opacity: 1.5;
 }
