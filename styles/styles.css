@@ -22,7 +22,7 @@
     font-size: 20px;
     color: #e60023;
   }
-  
+
   /* Estilo para la navegación */
   nav ul {
     list-style: none;
@@ -33,9 +33,23 @@
     margin-right: 5px;
   }
   
-#logo{
+#notifications{
   cursor: pointer;
   width: 50px;
+  padding-right: 5px;
+  transition: 0.3s;
+}
+
+#message{
+  cursor: pointer;
+  width: 50px;
+  padding-right: 5px;
+  transition: 0.3s;
+}
+
+#profile-img{
+  cursor: pointer;
+  width: 100px;
   transition: 0.3s;
 }
 .items-inicio {
@@ -151,12 +165,12 @@ main{
 
 /* Transición para el div*/
 
-.image-container {
+.card-image {
   position: relative;
   display: inline-block;
 }
 
-.image-container:hover{
+.card-image:hover{
   opacity: 0.5;
 }
 
@@ -175,6 +189,6 @@ main{
   transition: opacity 0.3s ease;
 }
 
-.image-container:hover .btn {
+.card-image:hover .btn {
   opacity: 1.5;
 }
